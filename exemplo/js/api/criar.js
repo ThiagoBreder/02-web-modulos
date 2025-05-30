@@ -1,5 +1,5 @@
 export async function enviarDados(dados) {
-    const url = "https://01c72ea2-dc83-4f76-b4e6-f998346028e2-00-1fmk7t8gu8uk4.picard.replit.dev/";
+    const url = "https://cc154a01-8055-496c-93dd-0c55cebf42a2-00-21gvya8tik3yp.picard.replit.dev/";
     const urlUsuarios = url + "usuarios";
 
     try {

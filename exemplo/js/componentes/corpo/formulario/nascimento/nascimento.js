@@ -6,6 +6,8 @@ function comportamentoDataNascimento(evento) {
   // Permitir apagar com as teclas Backspace e Delete.
   if (evento.key === 'Backspace' || evento.key === 'Delete') {
     return; // deixa seguir normalmente.
+    // backspace ou delete n fazem o comportamento padrao do default do input form
+    // 
   }
 
   // Impedir que sejam digitados mais de 10 caracteres (dd/mm/yyyy).
@@ -31,6 +33,10 @@ function comportamentoDataNascimento(evento) {
     input.value += '/';
   }
 }
+
+
+// '===' -> 'identico': comparacao com valor e tipo
+
 
 export async function componenteNascimento() {
   const formulario = document.querySelector('#formulario');
