@@ -1,0 +1,20 @@
+{
+  "name": "02-web-modulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoBreder/02-web-modulos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoBreder/02-web-modulos/issues"
+  },
+  "homepage": "https://github.com/ThiagoBreder/02-web-modulos#readme"
+}

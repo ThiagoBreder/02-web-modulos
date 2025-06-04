@@ -3,13 +3,19 @@ import { carregar } from "../../../carregar.js";
 function validarCampoNome(nome) {
     let mensagem = document.querySelector('#mensagemErroNome');
 
-    // trim-tira espaço em branco do inicio e do final dos campos
-    if (nome.value.trim().length < 2) {
-        nome.classList.add('invalido');//adicionar classe -> pode ser add elemento mas n compensa, tem q criar await, etc
-        mensagem.innerHTML = "Nome inválido.";
-    } else {
-        nome.classList.remove('invalido'); //inserir classe
-        mensagem.innerHTML = "";
+    if (nome != '') {
+        // trim-tira espaço em branco do inicio e do final dos campos
+        if (nome.value.trim().length < 2) {
+            nome.classList.add('invalido');//adicionar classe -> pode ser add elemento mas n compensa, tem q criar await, etc
+            mensagem.innerHTML = "Nome inválido.";
+        } else {
+            nome.classList.remove('invalido'); //inserir classe
+            mensagem.innerHTML = "";
+        }
+    }
+    else {
+        nome.classList.add('invalido');
+        mensagem.innerHTML = "Campo vazio!";
     }
 }
 
